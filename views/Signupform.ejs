@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageTitle %></title>
+    <link rel="stylesheet" href="Sigupform.css">
+</head>
+<body>
+    <h1> Sign Up Page </h1>
+    <div class="form-class">
+
+    <form action="/createUser" method="POST" class="form-label-inp">
+
+        <label for="name"> Name : </label>
+        <input type="text" name="name" placeholder="enter name">
+
+        <label for="emailid"> Email Id : </label>
+        <input type="text" name="emailid" placeholder="enter email ID">
+
+        
+        <label for="password"> Password : </label>
+        <input type="text" name="password" placeholder="enter password">
+
+        
+        <label for="password"> Confirm Password : </label>
+        <input type="text" name="cnfPassword" placeholder="enter password">
+
+
+        <button type="submit">Submit</button>
+
+    </form>
+    <h1><%= message %></h1>
+    </div>
+
+
+    
+</body>
+</html>
